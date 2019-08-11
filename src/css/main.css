@@ -1,0 +1,192 @@
+*,:before,:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montaga', serif;
+}
+/* SCROLLBAR for GOOGLE */
+::-webkit-scrollbar-button {
+    background-repeat:no-repeat;
+    width:6px;
+    height:0px
+}
+::-webkit-scrollbar-track {
+    background-color:#eee;
+    width: 0px;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0;
+    border-radius: 0px;
+    background-color:#000;
+    box-shadow:0px 1px 1px #fff inset;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+::-webkit-resizer{
+    background-repeat:no-repeat;
+    width:7px;
+    height:0px
+}
+::-webkit-scrollbar{
+    width: 1px;
+}   
+.wrapper{
+    max-width: 1720px;
+    margin: 0 auto;
+}
+header{
+    max-width: 1720px;
+    width: 85%;
+    margin: 0 auto;
+}
+.name{
+    position: relative;
+    cursor: default;
+}
+.name:before{
+    content: '';
+    width: 12px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 35px;
+}
+.name:after{
+    content: '';
+    width: 12px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    bottom: 35px;
+    right: -2px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    line-height: 90px;
+}
+nav>a{
+    position: relative;
+    color: #555;
+    transition: all .4s;
+    text-decoration: none;
+}
+nav>a:hover{
+    color: #F25746;
+    transition: all .4s;
+}
+nav>.prev:hover:before, nav>.next:hover:after{
+    background: #F25746;
+    transition: all .4s;
+}
+.prev:before{
+    content: '';
+    width: 75px;
+    height: 1px;
+    background: #bbb;
+    position: absolute;
+    left: -80px;
+    top: 52%;
+    transition: all .4s;
+}
+.next:after{
+    content: '';
+    width: 75px;
+    height: 1px;
+    background: #bbb;
+    position: absolute;
+    right: -80px;
+    top: 52%;
+    transition: all .4s;
+}
+nav>p{
+    text-align: center;
+}
+.background_image{
+    background: url(../img/WomanBgForBackground.png);
+    height: 650px;
+    width: 420px;
+    background-size: cover;
+    margin-top: -50px;
+    float: right;
+    margin-right: 190px;
+    border-right: 3px solid #000;
+}
+main {
+    position: relative;
+    height: 550px;
+    background: #eee;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.title{
+    font-size: 122px;
+    float: left;
+    font-family: 'Tangerine', cursive;
+    margin-left: 120px;
+    margin-top: 75px;
+    cursor: default;
+}
+.block_with_soft_media{
+    width: 240px;
+    height: 45px;
+    position: absolute;
+    transform: rotateZ(-90deg);
+    bottom: 98px;
+    display: flex;
+    left: -45px;
+    justify-content: space-around;
+}
+.block_with_soft_media  *{
+    color: #000;
+    text-decoration: none;
+    transition: all .4s;
+}
+.block_with_soft_media::after{
+    content: '';
+    width: 120px;
+    height: .9px;
+    background: #000;
+    position: absolute;
+    right: -110px;
+    top: 28%;
+    transform: translateY(-50%);
+}
+.block_with_soft_media > a:hover{
+    color: #F25746;
+    transition: all .4s;
+}
+footer{
+    width: 80%;
+    background: #CECECF;
+    height: 51px;
+    margin: 0;
+}
+.DateAndAuthor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 550px;
+    margin-left: 80px;
+    cursor: default;
+}
+.lineBetweenDateAndAuthor{
+    width: 50%;
+    height: 2px;
+    background: #000;
+}
+.text{
+    width: 280px;
+    position: absolute;
+    right: 640px;
+    top: 270px;
+    padding-top: 8px;
+    border-top: 1px solid #000;
+    height: 265px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    cursor: default;
+}
+
